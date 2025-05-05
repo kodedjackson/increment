@@ -10,6 +10,6 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Schedule::job(new IncrementAccountBalance)
-    ->everyFiveSeconds()
+    ->everyFiveMinutes()
     ->name('balance-increment')
     ->withoutOverlapping();

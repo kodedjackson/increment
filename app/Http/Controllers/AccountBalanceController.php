@@ -27,10 +27,9 @@ class AccountBalanceController extends Controller
             'balance' => 'required|numeric|min:0',
         ]);
 
-        AccountBalance::Create(
-            [
-                'balance' => $request->balance
-            ]
+        AccountBalance::updateOrCreate(
+            ['user_id' => auth()->id()],
+            ['balance' => $request->balance]
         );
 
         return redirect()->route('dashboard')->with('success', 'Balance updated successfully!');
