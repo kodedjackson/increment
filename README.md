@@ -39,6 +39,14 @@ npm install
 # Create environment file
 cp .env.example .env
 
+# Create a DB and add the configuration files, this is an example of my DB in .env file
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=increment
+DB_USERNAME=root
+DB_PASSWORD=
+
 # Generate application key
 php artisan key:generate
 
