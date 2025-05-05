@@ -50,6 +50,9 @@ DB_PASSWORD=
 # Generate application key
 php artisan key:generate
 
+# Run Migrations
+php artisan migrate
+
 #Running the Application
 Build frontend assets:
 
