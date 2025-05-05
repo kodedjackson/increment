@@ -53,7 +53,7 @@ php artisan key:generate
 # Run Migrations
 php artisan migrate
 
-#Running the Application
+# Running the Application
 Build frontend assets:
 
 - bash
